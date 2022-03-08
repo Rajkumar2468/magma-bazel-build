@@ -5,5 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        ls
-        whoami
+        export MAGMA_ROOT=${PWD}/magma
+        git clone https://github.com/magma/magma.git --depth 1
+        cd magma/experimental/bazel-base/
+        docker-compose build magma-builder
+        docker images
+
