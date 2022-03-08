@@ -1,0 +1,9 @@
+name: magma bazel build
+on: [push]
+jobs:
+  bazel-build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+      ls
+      whoami
