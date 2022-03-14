@@ -14,5 +14,5 @@ jobs:
         cd magma/experimental/bazel-base/
         docker-compose build magma-builder
         docker images
-        docker tag bazel-base_magma-builder rohitarora7/bazel-base_magma-builder
-        docker push rohitarora7/bazel-base_magma-builder
+        docker tag bazel-base_magma-builder nani903020/bazel-base_magma-builder
+        docker push nani903020/bazel-base_magma-builder
